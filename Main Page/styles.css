@@ -1,0 +1,24 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Welcome Text Styling */
+  main {
+	padding: 2rem;
+	text-align: center;
+  }
+  
+  .welcome h1 {
+	font-size: 2.5rem;
+	color: #004080;
+	margin-bottom: 1rem;
+  }
+  
+  .welcome p {
+	font-size: 1.25rem;
+	color: #333;
+  }
+  

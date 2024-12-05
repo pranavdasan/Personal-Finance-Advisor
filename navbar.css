@@ -1,0 +1,55 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Navbar */
+  header {
+	background-color: #004080; /* Sets background color */
+	padding: 1rem; 
+  }
+  
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none; /* Removes the bullet points */
+	max-width: 1200px;
+	margin: auto;
+  }
+  
+  .navbar li {
+	margin: 0 1rem; /* No top margins, 1rem side margins */
+  }
+  
+  .navbar a {
+	text-decoration: none; /* Removes the underline */
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: color 0.5s; /* Changes the color to the hover color in .3s */
+  }
+  
+  .navbar a:hover {
+	color: #ffd700;
+  }
+  
+  /* Logo Styling */
+  .logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .logo img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	transition: transform 0.5s;
+  }
+  
+  .logo img:hover {
+	transform: scale(1.1);
+  }
