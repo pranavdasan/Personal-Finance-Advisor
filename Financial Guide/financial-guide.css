@@ -3,22 +3,61 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  }
-  
-  /* Welcome Text Styling */
-  main {
+}
+
+/* Welcome Text Styling */
+main {
 	padding: 2rem;
 	text-align: center;
-  }
-  
-  .welcome h1 {
+}
+
+.welcome h1 {
 	font-size: 2.5rem;
 	color: #004080;
 	margin-bottom: 1rem;
-  }
-  
-  .welcome p {
+}
+
+.welcome p {
 	font-size: 1.25rem;
 	color: #333;
-  }
-  
+}
+
+/* Article Container */
+.article-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.screenshot {
+	width: 150%;
+	max-width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+}
+
+.screenshot:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+	}
+
+	.navbar a {
+		margin: 10px 0;
+	}
+
+	.welcome {
+		padding: 15px;
+	}
+
+	.screenshot {
+		max-width: 300px;
+	}
+}
