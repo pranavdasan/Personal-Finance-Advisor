@@ -32,10 +32,270 @@
 
     <main>
 
-        <!--Welcome Text -->
+        <!-- Welcome Text -->
         <section class="welcome">
             <h1>Update Expenses</h1>
             <p>Here you can update your expenses by filling out a form.</p>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <form class="expense-form" action="#" method="POST">
+
+                <!-- Basic Personal Information -->
+                <h2>Personal Information</h2>
+                <p>Please fill out your personal details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" name="first-name" required placeholder="Enter your first name">
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" name="last-name" required placeholder="Enter your last name">
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="dob" name="dob" required>
+                </div>
+
+                <!-- Income Information -->
+                <br>
+                <h2>Income Information</h2>
+                <p>Please fill out your income details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Primary Income Source</label>
+                    <input type="text" name="income-source" required placeholder="Enter your primary income source">
+                </div>
+
+                <div class="input-group">
+                    <label>Monthly Salary</label>
+                    <input type="number" name="monthly-salary" required placeholder="Enter your monthly salary" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Additional Income</label>
+                    <input type="text" name="additional-income" placeholder="Enter additional sources of income">
+                </div>
+
+                <div class="input-group">
+                    <label>Employment Status</label>
+                    <select name="employment-status" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="self-employed">Self-employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                </div>
+
+                <!-- Expenses Information -->
+                <br>
+                <h2>Expenses Information</h2>
+                <p>Please fill out your expense details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Monthly Rent/Mortgage Payment</label>
+                    <input type="number" name="rent-mortgage" required placeholder="Enter monthly rent/mortgage payment"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Utilities and Bills</label>
+                    <input type="number" name="utilities-bills" required placeholder="Enter total utilities and bills"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Groceries</label>
+                    <input type="number" name="groceries" required placeholder="Enter monthly grocery expenses" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Transportation Costs</label>
+                    <input type="number" name="transportation" required placeholder="Enter transportation expenses"
+                        min="0">
+                </div>
+
+
+                <div class="input-group">
+                    <label>Insurance Premiums</label>
+                    <input type="number" name="insurance-premiums" required
+                        placeholder="Enter total monthly insurance payments" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Childcare/Schooling Costs</label>
+                    <input type="number" name="childcare-schooling" placeholder="Enter childcare or schooling costs"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Entertainment/Leisure</label>
+                    <input type="number" name="entertainment-leisure" placeholder="Enter monthly entertainment expenses"
+                        min="0">
+                </div>
+
+                <!-- Assets Information -->
+                <br>
+                <h2>Assets Information</h2>
+                <p>Please fill out your asset details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Real Estate (e.g., House, Apartment)</label>
+                    <input type="text" name="real-estate" placeholder="Enter details about your real estate" />
+                </div>
+
+                <div class="input-group">
+                    <label>Vehicles</label>
+                    <input type="text" name="vehicles" placeholder="Enter details about your vehicles" />
+                </div>
+
+                <div class="input-group">
+                    <label>Investments (Stocks, Bonds, Retirement Accounts)</label>
+                    <input type="text" name="investments" placeholder="Enter your investment details" />
+                </div>
+
+                <div class="input-group">
+                    <label>Cash Savings</label>
+                    <input type="number" name="cash-savings" placeholder="Enter cash savings amount" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Other Assets (e.g., Jewelry, Art)</label>
+                    <input type="text" name="other-assets" placeholder="Enter other assets" />
+                </div>
+
+                <!-- Liabilities Information -->
+                <br>
+                <h2>Liabilities Information</h2>
+                <p>Please fill out your liability details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Outstanding Loans</label>
+                    <input type="text" name="outstanding-loans"
+                        placeholder="Enter details about your outstanding loans" />
+                </div>
+
+                <div class="input-group">
+                    <label>Credit Card Debt</label>
+                    <input type="number" name="credit-card-debt" placeholder="Enter outstanding credit card debt"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Mortgage Balance</label>
+                    <input type="number" name="mortgage-balance" placeholder="Enter remaining mortgage balance" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Other Liabilities</label>
+                    <input type="text" name="other-liabilities" placeholder="Enter other liabilities" />
+                </div>
+
+                <!-- Retirement and Savings Goals -->
+                <br>
+                <h2>Retirment and Savings Information</h2>
+                <p>Please fill out your retirment and/or savings goals below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Retirement Savings Goal</label>
+                    <input type="number" name="retirement-goal" placeholder="Enter your retirement savings goal"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Current Retirement Savings</label>
+                    <input type="number" name="current-retirement-savings"
+                        placeholder="Enter current retirement savings" min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Emergency Fund Goal</label>
+                    <input type="number" name="emergency-fund-goal" placeholder="Enter your emergency fund goal"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Current Emergency Fund</label>
+                    <input type="number" name="current-emergency-fund" placeholder="Enter current emergency fund amount"
+                        min="0">
+                </div>
+
+                <div class="input-group">
+                    <label>Other Savings Goals</label>
+                    <input type="text" name="other-savings-goals" placeholder="Enter other savings goals" />
+                </div>
+
+                <!-- Credit Information -->
+                <br>
+                <h2>Credit Information</h2>
+                <p>Please fill out your credit details below:</p>
+                <br>
+
+                <div class="input-group">
+                    <label>Credit Score Range</label>
+                    <select name="credit-score" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Do you have any credit card debt?</label>
+                    <select name="credit-debt" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Do you have any outstanding loans?</label>
+                    <select name="outstanding-loans" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <!-- Additional Notes -->
+                <div class="input-group">
+                    <label>Additional Notes</label>
+                    <textarea name="additional-notes" placeholder="Enter any additional notes"></textarea>
+                </div>
+
+                <!-- Consent and Submit -->
+                <div class="input-group">
+                    <input type="checkbox" name="terms-conditions" required> I agree to the terms and conditions.
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn">Update Expense</button>
+            </form>
         </section>
 
     </main>
