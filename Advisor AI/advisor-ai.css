@@ -21,4 +21,103 @@
 	font-size: 1.25rem;
 	color: #333;
   }
+
+ /* General styles for the chatbot container */
+.chatbot-container {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 2rem;
+	border-radius: 15px;
+	background: linear-gradient(135deg, #ffffff, #f4f4f9);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e6e6e6;
+  }
+  
+  /* Heading inside chatbot */
+  .chatbot-container h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	color: #007bff;
+  }
+  
+  /* Messages area */
+  .messages {
+	height: 400px;
+	overflow-y: auto;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column; /* Align messages vertically */
+	gap: 0.5rem; /* Space between messages */
+  }
+  
+  /* User messages */
+  .messages .user-message {
+	align-self: flex-end; /* Aligns to the right */
+	text-align: right;
+	color: #333;
+	background-color: #e9f5ff;
+	padding: 0.5rem 1rem;
+	border-radius: 12px;
+	display: inline-block;
+	max-width: 80%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	word-wrap: break-word; /* Ensures long messages wrap to the next line */
+  }
+  
+  /* Bot messages */
+  .messages .bot-message {
+	align-self: flex-start; /* Aligns to the left */
+	text-align: left;
+	color: #007bff;
+	background-color: #f9f9f9;
+	padding: 0.5rem 1rem;
+	border-radius: 12px;
+	display: inline-block;
+	max-width: 80%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	word-wrap: break-word; /* Ensures long messages wrap to the next line */
+  }
+  
+  /* Chat input field */
+  #userInput {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+	transition: border-color 0.3s ease;
+  }
+  
+  #userInput:focus {
+	outline: none;
+	border-color: #007bff;
+  }
+  
+  /* Chat send button */
+  button[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 8px;
+	background: #007bff;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+	background: #0056b3;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
   

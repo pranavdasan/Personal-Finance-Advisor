@@ -39,6 +39,26 @@
       <p>Here you can ask AI questions about your personal financial situation.</p>
     </section>
 
+
+    <main class="container">
+      <div class="chatbot-container">
+
+        <div class="messages" id="messages">
+          <!-- Messages will appear here -->
+        </div>
+        <form id="chatForm">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask a finance question..."
+            aria-label="Your message"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+
   </main>
   <script src="advisor-ai.js"></script>
 </body>
