@@ -2,45 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../navbar.css">
-    <link rel="stylesheet" href="expenses-tracker.css">
-    <title>Expenses Overview</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="expenses-tracker.css">
+  <title>Expenses Overview</title>
 </head>
 
 <body>
-    <header>
+  <header>
+    <!-- Nav Bar Code -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="../Expense Tracker/expenses-tracker.html">Expenses Tracker</a></li>
+        <li><a href="../Update Expenses/update-expenses.html">Update Expenses</a></li>
+        <li class="logo">
+          <a href="../Main Page/index.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2hWM7KV8V0Jd62Sxb7CRFgvSjFZQf0fXpMcEGcoguWR5tEHG"
+              alt="Personal Financial Advisor Logo">
+          </a>
+        </li>
+        <li><a href="../Financial Guide/financial-guide.html">Financial Guide</a></li>
+        <li><a href="../Advisor AI/advisor-ai.html">Advisor AI</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Nav Bar Code -->
-        <nav>
-            <ul class="navbar">
-                <li><a href="../Expense Tracker/expenses-tracker.html">Expenses Tracker</a></li>
-                <li><a href="../Update Expenses/update-expenses.html">Update Expenses</a></li>
-                <li class="logo">
-                    <a href="../Main Page/index.html">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2hWM7KV8V0Jd62Sxb7CRFgvSjFZQf0fXpMcEGcoguWR5tEHG:https://media.istockphoto.com/id/1423550966/vector/profit-rounded-lines-icon.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3D_KFEK2PUIlquKGVUYQ18I2rO6xQ3ieFDEx-xHpXRLTI%3D&s"
-                            alt="Personal Financial Advisor Logo">
-                    </a>
-                </li>
-                <li><a href="../Financial Guide/financial-guide.html">Financial Guide</a></li>
-                <li><a href="../Advisor AI/advisor-ai.html">Advisor AI</a></li>
-            </ul>
-        </nav>
+  <main>
+    <!-- Welcome Text -->
+    <section class="welcome">
+      <h1>Expenses Overview</h1>
+      <p>Here you can view all your expenses in detail.</p>
+    </section>
 
-    </header>
+    <div class="container">
+      <!-- Section for Personal Information -->
+      <div class="section" id="personal-info">
+        <h2>Personal Information</h2>
+        <div class="data-container">
+          <!-- Data will be inserted here dynamically -->
+        </div>
+      </div>
 
-    <main>
+      <!-- Section for Income -->
+      <div class="section" id="income">
+        <h2>Income</h2>
+        <div class="data-container">
+          <!-- Data will be inserted here dynamically -->
+        </div>
+      </div>
 
-        <!--Welcome Text -->
-        <section class="welcome">
-            <h1>Expenses Overview</h1>
-            <p>Here you can view all your expenses in detail.</p>
-        </section>
+      <!-- Section for Expenses -->
+      <div class="section" id="expenses">
+        <h2>Expenses</h2>
+        <div class="data-container">
+          <!-- Data will be inserted here dynamically -->
+        </div>
+      </div>
 
-    </main>
+      <!-- Section for Liabilities -->
+      <div class="section" id="liabilities">
+        <h2>Liabilities</h2>
+        <div class="data-container">
+          <!-- Data will be inserted here dynamically -->
+        </div>
+      </div>
 
-    <script src="expenses-tracker.js"></script>
+      <!-- Section for Savings and Goals -->
+      <div class="section" id="savings-goals">
+        <h2>Savings & Goals</h2>
+        <div class="data-container">
+          <!-- Data will be inserted here dynamically -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Load the expenses-tracker.js -->
+  <script type="module" src="expenses-tracker.js"></script>
 </body>
 
 </html>
